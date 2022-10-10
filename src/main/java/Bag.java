@@ -113,7 +113,7 @@ public abstract class Bag {
      */
     public String popItem(){
         if(this.numberOfContents > 0){
-            String popped = this.contents[-1];
+            String popped = this.contents[this.numberOfContents - 1];
             String[] newContents = new String[this.numberOfContents- 1];
             for(int i = 0; i < this.numberOfContents - 1; i++){
                 newContents[i] = this.contents[i];
